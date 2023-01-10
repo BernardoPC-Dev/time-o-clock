@@ -1,0 +1,16 @@
+body {
+ background-color: black;
+  color: white;
+ font-family: 'Dosis', sans-serif;
+}
+
+#hour {
+ font-size: 50px;
+}
+
+#good, #day, #mili {
+ font-size: 24px;
+}
+#main {
+text-align: center;
+}
