@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+ <title></title>
+ <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="main">
+  <p id="day"></p>
+  <p id="hour"></p>
+  <p id="good"></p>
+ </div>
+ <div>
+  <h2>Faltam...</h2>
+  <b id="pmm"></b> para o próximo minuto <br>
+  <b id="ph"></b> para a próxima hora <br>
+  <b id="pd"></b> para o próximo dia <br>
+  <b id="pw"></b> para a próxima semana <br>
+  <b id="pm"></b> para o próximo mês <br>
+  <b id="py"></b> para o próximo ano <br>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
