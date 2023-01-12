@@ -124,3 +124,41 @@ function falt() {
   .innerHTML =
   dayYear - dayNumYear + " dias";
 }
+
+function timeTo() {
+ let date = new Date();
+
+ let day = document.getElementById(
+  "inputDay").value;
+ let month = document.getElementById(
+  "inputMonth").value;
+ month--
+ let atDay = date.getDate();
+ let atMonth = date.getMonth();
+
+ let checkMonth = month - atMonth;
+ let checkDay = 0;
+ if (day > atDay) {
+  checkDay = day - atDay;
+ } else {
+  checkDay = atDay - day;
+ }
+ if (checkDay < 0 && mon == 0, 2, 4, 6,
+  7, 9,
+  11) {
+  checkDay = 31 - checkDay
+  checkMonth--
+ } else if (checkDay < 0 && mon == 1) {
+  checkMonth--
+  checkDay = 28 - checkDay
+ } else if (checkDay < 0 && mon == 3,
+  5, 8, 10) {
+  dayMon = 30
+  checkMonth--
+  checkDay = 30 - checkDay
+ }
+
+ document.getElementById("TimeToP")
+  .innerHTML = "Faltam " + checkMonth +
+  " meses e " + checkDay + " dias!";
+}
