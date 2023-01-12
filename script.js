@@ -138,27 +138,38 @@ function timeTo() {
  let atYear = date.getFullYear();
 
  let checkMonth = month - atMonth;
- let checkDay = atDay-day;
+ let checkDay = atDay - day;
  if (atDay > day) {
-    if (atMonth == 0, 2, 4, 6, 7, 9, 11) {
- checkDay = 31-checkDay;
- } else if (atMonth == 1) {
-     if (atYear % 0 &&  atYear != 100 || atYear == 400) {
-   checkDay = 29-checkDay
-  } else {
- checkDay = 28-checkDay 
+  if (atMonth == 0, 2, 4, 6, 7, 9,
+   11) {
+   checkDay = 31 - checkDay;
+  } else if (atMonth == 1) {
+   if (atYear % 0 && atYear != 100 ||
+    atYear == 400) {
+    checkDay = 29 - checkDay
+   } else {
+    checkDay = 28 - checkDay
+   }
+  } else if (atMonth == 3,
+   5, 8, 10) {
+   checkDay = 30 - checkDay;
   }
- } else if (atMonth == 3,
-  5, 8, 10) {
- checkDay = 30-checkDay;
- }
   checkMonth--
-}
-if (checkDay < 0) {
- checkDay = checkDay*-1
-}
-
- document.getElementById("TimeToP")
-  .innerHTML = "Faltam " + checkMonth +
-  " meses e " + checkDay + " dias!";
+ }
+ if (checkDay < 0) {
+  checkDay = checkDay * -1
+ }
+ if (checkMonth < 0) {
+  document.getElementById("TimeToP")
+   .innerHTML = "Esse dia já passou!";
+ } else if (checkMonth == 0) {
+  document.getElementById("TimeToP")
+   .innerHTML = "Faltam " + checkDay +
+   " dias!";
+ } else {
+  document.getElementById("TimeToP")
+   .innerHTML = "Faltam " +
+   checkMonth +
+   " meses e " + checkDay + " dias!";
+ }
 }
