@@ -135,28 +135,28 @@ function timeTo() {
  month--
  let atDay = date.getDate();
  let atMonth = date.getMonth();
+ let atYear = date.getFullYear();
 
  let checkMonth = month - atMonth;
- let checkDay = 0;
- if (day > atDay) {
-  checkDay = day - atDay;
- } else {
-  checkDay = atDay - day;
- }
- if (checkDay < 0 && mon == 0, 2, 4, 6,
-  7, 9,
-  11) {
-  checkDay = 31 - checkDay
-  checkMonth--
- } else if (checkDay < 0 && mon == 1) {
-  checkMonth--
-  checkDay = 28 - checkDay
- } else if (checkDay < 0 && mon == 3,
+ let checkDay = atDay-day;
+ if (atDay > day) {
+    if (atMonth == 0, 2, 4, 6, 7, 9, 11) {
+ checkDay = 31-checkDay;
+ } else if (atMonth == 1) {
+     if (atYear % 0 &&  atYear != 100 || atYear == 400) {
+   checkDay = 29-checkDay
+  } else {
+ checkDay = 28-checkDay 
+  }
+ } else if (atMonth == 3,
   5, 8, 10) {
-  dayMon = 30
-  checkMonth--
-  checkDay = 30 - checkDay
+ checkDay = 30-checkDay;
  }
+  checkMonth--
+}
+if (checkDay < 0) {
+ checkDay = checkDay*-1
+}
 
  document.getElementById("TimeToP")
   .innerHTML = "Faltam " + checkMonth +
