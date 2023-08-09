@@ -41,3 +41,11 @@ function good() {
    .innerHTML = "Boa Noite!";
  }
 }
+
+/*if (date.getUTCHours()-4 == -1) {
+  document.getElementById("utcny").innerHTML = `23:${date.getUTCMinutes()}<br>Horário de Nova York`
+
+} else if (date.getUTCHours()-4 == -2) {
+  document.getElementById("utcny").innerHTML = `22:${date.getUTCMinutes()}<br>Horário de Nova York`
+
+}*/
