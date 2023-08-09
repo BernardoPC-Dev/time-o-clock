@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+ <title>Time-o-clock</title>
+ <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header"><strong id="title" style="margin-left: 5px;">Time-o-clock</strong>  <div id="divsolua"><img src="img/lua.png" onclick="change()" height="50rem" width="80rem" id="solua" class="lua"></div></header>
+    <div id="main">
+  <p id="day"></p>
+  <div class="divhour"><p id="hour"></p></div>aaaaaaa
+  <p id="good"></p>
+ </div>
+ <div id="otherhours"> <div id="utc0"></div><div id="utcny"></div></div>
+ <div class="faltam">
+  <h2>Faltam...</h2>
+  <b id="pmm"></b> para o próximo minuto <br>
+  <b id="ph"></b> para a próxima hora <br>
+  <b id="pd"></b> para o próximo dia <br>
+  <b id="pw"></b> para a próxima semana <br>
+  <b id="pm"></b> para o próximo mês <br>
+  <b id="py"></b> para o próximo ano <br>
+ </div>
+ <h2 style="text-align: center;">Quanto tempo falta para...</h2>
+ <div class="tempopara">
+  <input id="inputDay" placeholder="Dia" type="number">
+  <input id="inputMonth" placeholder="Mês" type="number">
+  <button onclick="timeTo()">Enviar</button>
+  <p id="TimeToP"></p>
+ </div>
+ <script src="clocks.js"></script>
+ <script src="darktheme.js"></script>
+ <script src="timeto.js"></script>
+</body>
+</html>
