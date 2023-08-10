@@ -46,10 +46,10 @@ body {
     position: absolute;
     right: 0px
 }
-.divhour {
+#divhour {
     border: solid 1px black;
+    box-shadow: 1px 1px 10px 1px gray;
     border-radius: 50%;
-    box-shadow: 2px 2px 10px 1px gray;
     width: 200px;
     height: 70px;
     margin: auto;
