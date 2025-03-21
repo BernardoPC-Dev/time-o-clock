@@ -36,7 +36,7 @@ body {
     font-size: 25px;
 }
 #title, #pmm, #ph, #pd, #pw, #pm, #py, #tempoparatitle, #day, #good, #utc0, #utcny {
-    transition: font-size, 1s;
+    transition: font-size, 0.75s;
 }
 #title:hover, #pmm:hover, #ph:hover, #pd:hover, #pw:hover, #pm:hover, #py:hover, #day:hover, #utc0:hover, #utcny:hover {
     font-size: 20px;
@@ -48,8 +48,7 @@ body {
 }
 #divhour {
     border: solid 1px black;
-    box-shadow: 1px 1px 10px 1px gray;
-    border-radius: 50%;
+    border-radius: 10%;
     width: 200px;
     height: 70px;
     margin: auto;
